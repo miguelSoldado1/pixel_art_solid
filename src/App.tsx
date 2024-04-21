@@ -1,23 +1,32 @@
 import { createSignal } from "solid-js";
-import pixelMap from "../art";
 import { Grid } from "./components/Grid";
 import Palette from "./components/Palette";
 import { AppProvider } from "./provider";
+import { generateRandomArt } from "../utils";
 
-const colors = ["#000000", "#FFFFFF", "#F6C8A4", "#4C2D17", "#8BC34A"];
+const width = 16 * 4;
+const height = 9 * 4;
+const colorAmount = 10;
+
+const { pixels, colors } = generateRandomArt({ width, height, colorAmount });
 
 function App() {
   const [colorIndex, setColorIndex] = createSignal(0);
 
   return (
-    <AppProvider pixels={pixelMap}>
+    <AppProvider pixels={pixels}>
       <div class="relative flex h-full select-none justify-center gap-8 p-20">
         <Palette
           colors={colors}
           colorIndex={colorIndex}
           setColorIndex={setColorIndex}
         />
-        <Grid colors={colors} rows={15} columns={15} colorIndex={colorIndex} />
+        <Grid
+          colors={colors}
+          rows={height}
+          columns={width}
+          colorIndex={colorIndex}
+        />
       </div>
     </AppProvider>
   );
