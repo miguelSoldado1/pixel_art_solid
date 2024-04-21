@@ -31,7 +31,7 @@ export function Grid(props: GridProps) {
   return (
     <>
       <div
-        class={`grid h-full overflow-auto ${outlineClass}`}
+        class={`grid h-full cursor-crosshair overflow-auto ${outlineClass}`}
         style={{
           "grid-template-rows": `repeat(${rows}, 1fr)`,
           "grid-template-columns": `repeat(${columns}, 1fr)`,
