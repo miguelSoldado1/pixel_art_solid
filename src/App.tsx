@@ -4,8 +4,8 @@ import Palette from "./components/Palette";
 import { AppProvider } from "./provider";
 import { generateRandomArt } from "../utils";
 
-const width = 16 * 4;
-const height = 9 * 4;
+const width = 16 * 2;
+const height = 9 * 2;
 const colorAmount = 10;
 
 const { pixels, colors } = generateRandomArt({ width, height, colorAmount });
@@ -15,17 +15,17 @@ function App() {
 
   return (
     <AppProvider pixels={pixels}>
-      <div class="relative flex h-full select-none justify-center gap-8 p-20">
-        <Palette
-          colors={colors}
-          colorIndex={colorIndex}
-          setColorIndex={setColorIndex}
-        />
+      <div class="relative flex h-full select-none justify-center gap-8 p-8">
         <Grid
           colors={colors}
           rows={height}
           columns={width}
           colorIndex={colorIndex}
+        />
+        <Palette
+          colors={colors}
+          colorIndex={colorIndex}
+          setColorIndex={setColorIndex}
         />
       </div>
     </AppProvider>

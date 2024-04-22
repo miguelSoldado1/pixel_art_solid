@@ -1,5 +1,6 @@
 import { Accessor, Index, createSignal } from "solid-js";
 import { useAppProvider } from "../provider";
+import { Pixel } from "../types";
 
 interface GridProps {
   rows: number;
@@ -13,7 +14,7 @@ interface SolidMouseEvent extends MouseEvent {
   target: Element;
 }
 
-const outlineClass = "outline outline-1 outline-outline-color";
+const outlineColor = "#333333";
 
 export function Grid(props: GridProps) {
   const { rows, columns, colors, colorIndex } = props;
@@ -24,14 +25,14 @@ export function Grid(props: GridProps) {
     setPosition({ x: index % columns, y: Math.floor(index / columns) });
 
     if (pixels()[index].colorIndex === colorIndex() && e.buttons === 1) {
-      setPixel(index, { painted: !e.shiftKey, colorIndex: colorIndex() });
+      setPixel(index, { painted: true, colorIndex: colorIndex() });
     }
   }
 
   return (
     <>
       <div
-        class={`grid h-full cursor-crosshair overflow-auto ${outlineClass}`}
+        class="grid h-5/6 cursor-crosshair"
         style={{
           "grid-template-rows": `repeat(${rows}, 1fr)`,
           "grid-template-columns": `repeat(${columns}, 1fr)`,
@@ -43,13 +44,16 @@ export function Grid(props: GridProps) {
               <div
                 onMouseEnter={(e) => handleDraw(e, index)}
                 onMouseDown={(e) => handleDraw(e, index)}
-                class={`flex aspect-square items-center justify-center ${outlineClass} ${item().colorIndex === colorIndex() ? "bg-accent-color" : ""}`}
+                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === colorIndex() ? "bg-accent-color" : ""}`}
                 style={{
                   "background-color": item().painted
                     ? colors[item().colorIndex]
                     : item().colorIndex === colorIndex()
                       ? "#404040"
                       : undefined,
+                  outline: item().painted
+                    ? "none"
+                    : `1px solid ${outlineColor}`,
                 }}
               >
                 {!item().painted && item().colorIndex}
@@ -58,7 +62,7 @@ export function Grid(props: GridProps) {
           }}
         </Index>
       </div>
-      <div class="absolute bottom-0 right-0 m-8 flex gap-2">
+      <div class="absolute bottom-0 left-0 m-8 flex gap-2 text-lg">
         <span>
           {position().x}, {position().y}
         </span>

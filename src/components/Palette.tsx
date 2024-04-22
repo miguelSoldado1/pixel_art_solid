@@ -20,8 +20,11 @@ export default function Palette(props: PaletteProps) {
   );
 
   return (
-    <div class="flex flex-col gap-4">
-      <div class="grid grid-cols-3">
+    <div class="absolute bottom-0 right-0 m-4 flex flex-col gap-2">
+      <span class="mx-4 border-b-2 border-white p-1 text-center text-lg">
+        {paintedPixels()} | {currentPixels().length}
+      </span>
+      <div class="grid grid-cols-10">
         <Index each={colors}>
           {(color, index) => (
             <button
@@ -34,9 +37,6 @@ export default function Palette(props: PaletteProps) {
           )}
         </Index>
       </div>
-      <span>
-        {paintedPixels()} / {currentPixels().length}
-      </span>
     </div>
   );
 }

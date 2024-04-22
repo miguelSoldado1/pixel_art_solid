@@ -1,4 +1,4 @@
-import { Pixel } from "./src/types";
+import type { Pixel } from "./src/types";
 
 interface GenerateRandomArtParams {
   width: number;
@@ -17,7 +17,7 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
   const { width, height, colorAmount } = params;
 
   const colors = Array.from({ length: colorAmount }).map(() =>
-    randomHexColorString(),
+    randomBrightHexColorString(),
   );
 
   let pixels = Array.from({ length: width * height }).map(() => ({
@@ -25,11 +25,12 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
     painted: false,
   }));
 
-  const splatterParams = { pixels, width, height, colorIndex: 0 };
+  const splatterParams = { pixels, width, height };
+  const splatterIndexes = [0, 0, 1, 2, 5, 6, 7];
 
-  pixels = addBigSplatter(splatterParams);
-  pixels = addBigSplatter(splatterParams);
-  pixels = addBigSplatter(splatterParams);
+  for (const index of splatterIndexes) {
+    pixels = addBigSplatter({ ...splatterParams, colorIndex: index });
+  }
 
   return { colors, pixels };
 }
@@ -37,7 +38,7 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
 function addBigSplatter(params: AddBigSplatterParams): Pixel[] {
   const { pixels, colorIndex, width, height } = params;
 
-  const splatSize = Math.floor(1 + Math.random() * 9);
+  const splatSize = Math.min(width, height) / 3;
 
   // Generate a random splat position within the grid
   const splatX = Math.floor(Math.random() * width);
@@ -76,6 +77,17 @@ function generateSplatterPattern(size: number): boolean[][] {
   return pattern;
 }
 
-function randomHexColorString(): string {
-  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+function randomBrightHexColorString(): string {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+
+  // Ensure the color is bright by making sure all channels are above a certain threshold
+  let threshold = 200; // Adjust this threshold as needed
+  if (red < threshold && green < threshold && blue < threshold) {
+    return randomBrightHexColorString();
+  }
+
+  // Convert the RGB values to hexadecimal and concatenate them
+  return `#${((1 << 24) + (red << 16) + (green << 8) + blue).toString(16).slice(1)}`;
 }
