@@ -1,30 +1,32 @@
-import {
-  Accessor,
-  JSX,
-  createContext,
-  createSignal,
-  useContext,
-} from "solid-js";
+import { JSX, createContext, useContext } from "solid-js";
+import { createStore } from "solid-js/store";
 import type { Pixel } from "./types";
 
+interface State {
+  pixels: Pixel[];
+  colors: string[];
+  currentColor: number;
+}
+
 interface ContextProps {
-  pixels: Accessor<Pixel[]>;
-  setPixel: (index: number, { painted, colorIndex }: Pixel) => Pixel[];
+  state: State;
+  setPixel: (index: number, { painted, colorIndex }: Pixel) => void;
   isColorFinished: (index: number) => boolean;
+  setCurrentColor: (index: number) => void;
 }
 
 const PixelsContext = createContext<ContextProps>();
 
 interface AppProviderProps {
   children: JSX.Element;
-  pixels: Pixel[];
+  state: State;
 }
 
 export function AppProvider(props: AppProviderProps) {
-  const [pixels, setPixels] = createSignal(props.pixels);
+  const [state, setState] = createStore(props.state);
 
   function setPixel(index: number, { painted, colorIndex }: Pixel) {
-    return setPixels((prevPixels) => {
+    setState("pixels", (prevPixels) => {
       const newPixels = [...prevPixels];
       newPixels[index] = { painted, colorIndex };
       return newPixels;
@@ -32,13 +34,19 @@ export function AppProvider(props: AppProviderProps) {
   }
 
   function isColorFinished(index: number) {
-    return pixels().every(
+    return state.pixels.every(
       (pixel) => pixel.colorIndex === index && pixel.painted,
     );
   }
 
+  function setCurrentColor(index: number) {
+    setState("currentColor", index);
+  }
+
   return (
-    <PixelsContext.Provider value={{ pixels, setPixel, isColorFinished }}>
+    <PixelsContext.Provider
+      value={{ state, setPixel, isColorFinished, setCurrentColor }}
+    >
       {props.children}
     </PixelsContext.Provider>
   );
@@ -53,3 +61,7 @@ export function useAppProvider() {
 
   return context;
 }
+
+// export function AppProvider() {
+//   const [state, seState] = createStore({ pixels: [] });
+// }

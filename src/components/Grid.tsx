@@ -1,12 +1,9 @@
-import { Accessor, Index, createSignal } from "solid-js";
+import { Index, createSignal } from "solid-js";
 import { useAppProvider } from "../provider";
-import { Pixel } from "../types";
 
 interface GridProps {
   rows: number;
   columns: number;
-  colors: string[];
-  colorIndex: Accessor<number>;
 }
 
 interface SolidMouseEvent extends MouseEvent {
@@ -17,15 +14,17 @@ interface SolidMouseEvent extends MouseEvent {
 const outlineColor = "#333333";
 
 export function Grid(props: GridProps) {
-  const { rows, columns, colors, colorIndex } = props;
+  const { rows, columns } = props;
+
   const [position, setPosition] = createSignal({ x: 0, y: 0 });
-  const { pixels, setPixel } = useAppProvider();
+  const { state, setPixel } = useAppProvider();
+  const { colors, currentColor, pixels } = state;
 
   function handleDraw(e: SolidMouseEvent, index: number) {
     setPosition({ x: index % columns, y: Math.floor(index / columns) });
 
-    if (pixels()[index].colorIndex === colorIndex() && e.buttons === 1) {
-      setPixel(index, { painted: true, colorIndex: colorIndex() });
+    if (pixels[index].colorIndex === currentColor && e.buttons === 1) {
+      setPixel(index, { painted: true, colorIndex: currentColor });
     }
   }
 
@@ -38,17 +37,17 @@ export function Grid(props: GridProps) {
           "grid-template-columns": `repeat(${columns}, 1fr)`,
         }}
       >
-        <Index each={pixels()}>
+        <Index each={pixels}>
           {(item, index) => {
             return (
               <div
                 onMouseEnter={(e) => handleDraw(e, index)}
                 onMouseDown={(e) => handleDraw(e, index)}
-                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === colorIndex() ? "bg-accent-color" : ""}`}
+                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === currentColor ? "bg-accent-color" : ""}`}
                 style={{
                   "background-color": item().painted
                     ? colors[item().colorIndex]
-                    : item().colorIndex === colorIndex()
+                    : item().colorIndex === currentColor
                       ? "#404040"
                       : undefined,
                   outline: item().painted
@@ -68,8 +67,8 @@ export function Grid(props: GridProps) {
         </span>
         |
         <span>
-          {pixels().reduce((sum, pixel) => sum + (pixel.painted ? 1 : 0), 0)} /{" "}
-          {pixels().length}
+          {pixels.reduce((sum, pixel) => sum + (pixel.painted ? 1 : 0), 0)} /{" "}
+          {pixels.length}
         </span>
       </div>
     </>

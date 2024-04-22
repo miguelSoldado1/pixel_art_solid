@@ -1,18 +1,12 @@
-import { Accessor, Index, Setter, createMemo } from "solid-js";
+import { Index, createMemo } from "solid-js";
 import { useAppProvider } from "../provider";
 
-interface PaletteProps {
-  colors: string[];
-  colorIndex: Accessor<number>;
-  setColorIndex: Setter<number>;
-}
-
-export default function Palette(props: PaletteProps) {
-  const { colors, colorIndex, setColorIndex } = props;
-  const { pixels } = useAppProvider();
+export function Palette() {
+  const { state, setCurrentColor } = useAppProvider();
+  const { currentColor, colors, pixels } = state;
 
   const currentPixels = createMemo(() =>
-    pixels().filter((pixel) => pixel.colorIndex === colorIndex()),
+    pixels.filter((pixel) => pixel.colorIndex === currentColor),
   );
 
   const paintedPixels = createMemo(() =>
@@ -28,9 +22,9 @@ export default function Palette(props: PaletteProps) {
         <Index each={colors}>
           {(color, index) => (
             <button
-              class={`flex aspect-square w-12 cursor-pointer items-center justify-center border text-outline-color ${colorIndex() === index ? "border-white" : "border-black"}`}
+              class={`text-outline-color flex aspect-square w-12 cursor-pointer items-center justify-center border ${currentColor === index ? "border-white" : "border-black"}`}
               style={{ background: color() }}
-              onClick={() => setColorIndex(index)}
+              onClick={() => setCurrentColor(index)}
             >
               {index}
             </button>
