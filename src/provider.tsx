@@ -11,7 +11,6 @@ export interface State {
 interface ContextProps {
   state: State;
   setPixel: (index: number, { painted, colorIndex }: Pixel) => void;
-  isColorFinished: (index: number) => boolean;
   setCurrentColor: (index: number) => void;
 }
 
@@ -33,20 +32,12 @@ export function AppProvider(props: AppProviderProps) {
     });
   }
 
-  function isColorFinished(index: number) {
-    return state.pixels.every(
-      (pixel) => pixel.colorIndex === index && pixel.painted,
-    );
-  }
-
   function setCurrentColor(index: number) {
     setState("currentColor", index);
   }
 
   return (
-    <PixelsContext.Provider
-      value={{ state, setPixel, isColorFinished, setCurrentColor }}
-    >
+    <PixelsContext.Provider value={{ state, setPixel, setCurrentColor }}>
       {props.children}
     </PixelsContext.Provider>
   );
