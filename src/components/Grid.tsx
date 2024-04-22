@@ -18,13 +18,15 @@ export function Grid(props: GridProps) {
 
   const [position, setPosition] = createSignal({ x: 0, y: 0 });
   const { state, setPixel } = useAppProvider();
-  const { colors, currentColor, pixels } = state;
 
   function handleDraw(e: SolidMouseEvent, index: number) {
     setPosition({ x: index % columns, y: Math.floor(index / columns) });
 
-    if (pixels[index].colorIndex === currentColor && e.buttons === 1) {
-      setPixel(index, { painted: true, colorIndex: currentColor });
+    if (
+      state.pixels[index].colorIndex === state.currentColor &&
+      e.buttons === 1
+    ) {
+      setPixel(index, { painted: true, colorIndex: state.currentColor });
     }
   }
 
@@ -37,17 +39,17 @@ export function Grid(props: GridProps) {
           "grid-template-columns": `repeat(${columns}, 1fr)`,
         }}
       >
-        <Index each={pixels}>
+        <Index each={state.pixels}>
           {(item, index) => {
             return (
               <div
                 onMouseEnter={(e) => handleDraw(e, index)}
                 onMouseDown={(e) => handleDraw(e, index)}
-                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === currentColor ? "bg-accent-color" : ""}`}
+                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
                 style={{
                   "background-color": item().painted
-                    ? colors[item().colorIndex]
-                    : item().colorIndex === currentColor
+                    ? state.colors[item().colorIndex]
+                    : item().colorIndex === state.currentColor
                       ? "#404040"
                       : undefined,
                   outline: item().painted
@@ -67,8 +69,11 @@ export function Grid(props: GridProps) {
         </span>
         |
         <span>
-          {pixels.reduce((sum, pixel) => sum + (pixel.painted ? 1 : 0), 0)} /{" "}
-          {pixels.length}
+          {state.pixels.reduce(
+            (sum, pixel) => sum + (pixel.painted ? 1 : 0),
+            0,
+          )}{" "}
+          / {state.pixels.length}
         </span>
       </div>
     </>

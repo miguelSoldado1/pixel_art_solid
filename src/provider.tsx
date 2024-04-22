@@ -2,7 +2,7 @@ import { JSX, createContext, useContext } from "solid-js";
 import { createStore } from "solid-js/store";
 import type { Pixel } from "./types";
 
-interface State {
+export interface State {
   pixels: Pixel[];
   colors: string[];
   currentColor: number;
@@ -56,12 +56,8 @@ export function useAppProvider() {
   const context = useContext(PixelsContext);
 
   if (context === undefined) {
-    throw new Error(`usePixels must be used within a PixelsProvider`);
+    throw new Error(`useAppProvider must be used within a AppProvider`);
   }
 
   return context;
 }
-
-// export function AppProvider() {
-//   const [state, seState] = createStore({ pixels: [] });
-// }
