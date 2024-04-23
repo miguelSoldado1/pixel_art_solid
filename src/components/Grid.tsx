@@ -1,5 +1,6 @@
-import { Index, createSignal } from "solid-js";
+import { Index, createMemo, createSignal } from "solid-js";
 import { useAppProvider } from "../provider";
+import type { Pixel } from "../types";
 
 interface GridProps {
   rows: number;
@@ -19,15 +20,40 @@ export function Grid(props: GridProps) {
   const [position, setPosition] = createSignal({ x: 0, y: 0 });
   const { state, setState } = useAppProvider();
 
+  const paintedPixelsCount = createMemo(() =>
+    state.pixels.reduce((acc, pixel) => (pixel.painted ? acc + 1 : acc), 0),
+  );
+
   function handleDraw(e: SolidMouseEvent, index: number) {
     setPosition({ x: index % columns, y: Math.floor(index / columns) });
+    const current = state.currentColor === state.pixels[index].colorIndex;
 
-    if (
-      state.pixels[index].colorIndex === state.currentColor &&
-      e.buttons === 1
-    ) {
+    if (current && (e.buttons === 1 || e.button === 1)) {
+      if (e.shiftKey) return bucketFill(index);
       setState("pixels", index, (prev) => ({ ...prev, painted: true }));
     }
+  }
+
+  function bucketFill(index: number, visited: Set<number> = new Set()) {
+    if (
+      index < 0 ||
+      index >= columns * rows ||
+      visited.has(index) ||
+      state.pixels[index].colorIndex !== state.currentColor
+    ) {
+      return true;
+    }
+
+    setState("pixels", index, (prev) => ({ ...prev, painted: true }));
+    visited.add(index);
+
+    const pixelX = index % columns;
+    const pixelY = Math.floor(index / columns);
+
+    if (pixelY > 0) bucketFill(index - columns, visited); // top
+    if (pixelX < columns - 1) bucketFill(index + 1, visited); // right
+    if (pixelY < rows - 1) bucketFill(index + columns, visited); // bottom
+    if (pixelX > 0) bucketFill(index - 1, visited); // left
   }
 
   return (
@@ -69,11 +95,7 @@ export function Grid(props: GridProps) {
         </span>
         |
         <span>
-          {state.pixels.reduce(
-            (sum, pixel) => sum + (pixel.painted ? 1 : 0),
-            0,
-          )}{" "}
-          / {state.pixels.length}
+          {paintedPixelsCount()} / {state.pixels.length}
         </span>
       </div>
     </>
