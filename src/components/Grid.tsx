@@ -17,7 +17,7 @@ export function Grid(props: GridProps) {
   const { rows, columns } = props;
 
   const [position, setPosition] = createSignal({ x: 0, y: 0 });
-  const { state, setPixel } = useAppProvider();
+  const { state, setState } = useAppProvider();
 
   function handleDraw(e: SolidMouseEvent, index: number) {
     setPosition({ x: index % columns, y: Math.floor(index / columns) });
@@ -26,7 +26,7 @@ export function Grid(props: GridProps) {
       state.pixels[index].colorIndex === state.currentColor &&
       e.buttons === 1
     ) {
-      setPixel(index, { painted: true, colorIndex: state.currentColor });
+      setState("pixels", index, (prev) => ({ ...prev, painted: true }));
     }
   }
 

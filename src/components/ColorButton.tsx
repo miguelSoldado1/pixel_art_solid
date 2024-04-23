@@ -13,13 +13,13 @@ function isColorFinished(state: State, index: number) {
 }
 
 export function ColorButton(props: ColorButtonProps) {
-  const { state, setCurrentColor } = useAppProvider();
+  const { state, setState } = useAppProvider();
 
   return (
     <button
       class={`text-outline-color flex aspect-square w-12 cursor-pointer items-center justify-center border ${state.currentColor === props.index ? "border-white" : "border-black"}`}
       style={{ background: props.color }}
-      onClick={() => setCurrentColor(props.index)}
+      onClick={() => setState("currentColor", props.index)}
     >
       {isColorFinished(state, props.index) ? "✔️" : props.index}
     </button>

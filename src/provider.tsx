@@ -1,5 +1,5 @@
 import { JSX, createContext, useContext } from "solid-js";
-import { createStore } from "solid-js/store";
+import { SetStoreFunction, createStore } from "solid-js/store";
 import type { Pixel } from "./types";
 
 export interface State {
@@ -10,8 +10,7 @@ export interface State {
 
 interface ContextProps {
   state: State;
-  setPixel: (index: number, { painted, colorIndex }: Pixel) => void;
-  setCurrentColor: (index: number) => void;
+  setState: SetStoreFunction<State>;
 }
 
 const PixelsContext = createContext<ContextProps>();
@@ -24,20 +23,8 @@ interface AppProviderProps {
 export function AppProvider(props: AppProviderProps) {
   const [state, setState] = createStore(props.state);
 
-  function setPixel(index: number, { painted, colorIndex }: Pixel) {
-    setState("pixels", (prevPixels) => {
-      const newPixels = [...prevPixels];
-      newPixels[index] = { painted, colorIndex };
-      return newPixels;
-    });
-  }
-
-  function setCurrentColor(index: number) {
-    setState("currentColor", index);
-  }
-
   return (
-    <PixelsContext.Provider value={{ state, setPixel, setCurrentColor }}>
+    <PixelsContext.Provider value={{ state, setState }}>
       {props.children}
     </PixelsContext.Provider>
   );
