@@ -1,6 +1,5 @@
 import { Index, createMemo, createSignal } from "solid-js";
 import { useAppProvider } from "../provider";
-import type { Pixel } from "../types";
 
 interface GridProps {
   rows: number;
