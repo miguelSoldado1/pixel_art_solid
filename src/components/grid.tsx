@@ -28,8 +28,15 @@ export function Grid(props: GridProps) {
     const current = state.currentColor === state.pixels[index].colorIndex;
 
     if (current && (e.buttons === 1 || e.button === 1)) {
-      if (e.shiftKey) return bucketFill(index);
-      setState("pixels", index, (prev) => ({ ...prev, painted: true }));
+      if (state.paintTool === "paintBucket") {
+        return bucketFill(index);
+      }
+      if (state.paintTool === "pencil") {
+        return setState("pixels", index, (prev) => ({
+          ...prev,
+          painted: true,
+        }));
+      }
     }
   }
 
