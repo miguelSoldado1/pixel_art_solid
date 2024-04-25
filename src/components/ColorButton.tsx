@@ -1,3 +1,4 @@
+import CheckMark from "../assets/check.svg";
 import { State, useAppProvider } from "../provider";
 import { getPaintedRatio } from "../../helpers";
 
@@ -21,7 +22,7 @@ export function ColorButton(props: ColorButtonProps) {
       style={{ background: props.color }}
       onClick={() => setState("currentColor", props.index)}
     >
-      {isColorFinished(state, props.index) ? "✔️" : props.index}
+      {isColorFinished(state, props.index) ? <CheckMark /> : props.index}
     </button>
   );
 }
