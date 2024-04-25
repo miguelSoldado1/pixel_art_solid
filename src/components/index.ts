@@ -1,2 +1,3 @@
-export * from "./Grid";
-export * from "./Palette";
+export * from "./grid";
+export * from "./palette";
+export * from "./sideBar";

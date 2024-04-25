@@ -1,6 +1,6 @@
 import { Index } from "solid-js";
 import { useAppProvider } from "../provider";
-import { ColorButton } from "./ColorButton";
+import { ColorButton } from "./colorButton";
 import { getPaintedRatio } from "../../helpers";
 import type { Pixel } from "../types";
 

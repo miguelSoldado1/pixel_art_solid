@@ -10,12 +10,12 @@ const state = generateRandomArt({ width, height, colorAmount });
 
 function App() {
   return (
-    <AppProvider state={{ ...state, currentColor: 0 }}>
-      <div class="relative flex h-full select-none justify-center gap-8 p-8">
+    <div class="relative flex h-full select-none justify-center gap-8 p-8">
+      <AppProvider state={{ ...state, currentColor: 0 }}>
         <Grid rows={height} columns={width} />
         <Palette />
-      </div>
-    </AppProvider>
+      </AppProvider>
+    </div>
   );
 }
 
