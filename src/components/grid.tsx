@@ -15,8 +15,6 @@ const outlineColor = "#333333";
 
 export function Grid(props: GridProps) {
   const { rows, columns } = props;
-
-  const [position, setPosition] = createSignal({ x: 0, y: 0 });
   const { state, setState } = useAppProvider();
 
   const paintedPixelsCount = createMemo(() =>
@@ -24,7 +22,6 @@ export function Grid(props: GridProps) {
   );
 
   function handleDraw(e: SolidMouseEvent, index: number) {
-    setPosition({ x: index % columns, y: Math.floor(index / columns) });
     const current = state.currentColor === state.pixels[index].colorIndex;
 
     if (current && (e.buttons === 1 || e.button === 1)) {
@@ -96,10 +93,6 @@ export function Grid(props: GridProps) {
         </Index>
       </div>
       <div class="absolute bottom-0 left-0 m-8 flex gap-2 text-lg">
-        <span>
-          {position().x}, {position().y}
-        </span>
-        |
         <span>
           {paintedPixelsCount()} / {state.pixels.length}
         </span>
