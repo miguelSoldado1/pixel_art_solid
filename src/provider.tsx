@@ -3,7 +3,7 @@ import { SetStoreFunction, createStore } from "solid-js/store";
 import type { Pixel } from "./types";
 
 export interface State {
-  pixels: Pixel[];
+  pixels: Pixel[][];
   colors: string[];
   currentColor: number;
   paintTool: "paintBucket" | "pencil";

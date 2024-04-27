@@ -1,62 +1,56 @@
-import { Index, createMemo, createSignal } from "solid-js";
+import { Index, createMemo } from "solid-js";
 import { useAppProvider } from "../provider";
-
-interface GridProps {
-  rows: number;
-  columns: number;
-}
-
-interface SolidMouseEvent extends MouseEvent {
-  currentTarget: HTMLDivElement;
-  target: Element;
-}
+import type { Pixel } from "../types";
 
 const outlineColor = "#333333";
 
-export function Grid(props: GridProps) {
-  const { rows, columns } = props;
+function countPaintedPixels(pixels: Pixel[][]) {
+  let count = 0;
+  for (const row of pixels) {
+    for (const column of row) {
+      if (column.painted) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+export function Grid() {
   const { state, setState } = useAppProvider();
+  const paintedPixelsCount = createMemo(() => countPaintedPixels(state.pixels));
+  const columns = state.pixels[0].length;
+  const rows = state.pixels.length;
 
-  const paintedPixelsCount = createMemo(() =>
-    state.pixels.reduce((acc, pixel) => (pixel.painted ? acc + 1 : acc), 0),
-  );
-
-  function handleDraw(e: SolidMouseEvent, index: number) {
-    const current = state.currentColor === state.pixels[index].colorIndex;
+  function handleDraw(e: MouseEvent, y: number, x: number) {
+    const current = state.currentColor === state.pixels[y][x].colorIndex;
 
     if (current && (e.buttons === 1 || e.button === 1)) {
       if (state.paintTool === "paintBucket") {
-        return bucketFill(index);
+        return bucketFill(x, y);
       }
+
       if (state.paintTool === "pencil") {
-        return setState("pixels", index, (prev) => ({
-          ...prev,
-          painted: true,
-        }));
+        return setState("pixels", y, x, (prev) => ({ ...prev, painted: true }));
       }
     }
   }
 
-  function bucketFill(index: number, visited: Set<number> = new Set()) {
-    if (
-      index < 0 ||
-      index >= columns * rows ||
-      visited.has(index) ||
-      state.pixels[index].colorIndex !== state.currentColor
-    ) {
-      return true;
+  function bucketFill(x: number, y: number, visited = new Set<number>()) {
+    const { currentColor, pixels } = state;
+    const currentIndex = y * columns + x;
+
+    if (visited.has(currentIndex) || pixels[y][x].colorIndex !== currentColor) {
+      return;
     }
 
-    setState("pixels", index, (prev) => ({ ...prev, painted: true }));
-    visited.add(index);
+    setState("pixels", y, x, (prev) => ({ ...prev, painted: true }));
+    visited.add(currentIndex);
 
-    const pixelX = index % columns;
-    const pixelY = Math.floor(index / columns);
-
-    if (pixelY > 0) bucketFill(index - columns, visited); // top
-    if (pixelX < columns - 1) bucketFill(index + 1, visited); // right
-    if (pixelY < rows - 1) bucketFill(index + columns, visited); // bottom
-    if (pixelX > 0) bucketFill(index - 1, visited); // left
+    if (y > 0) bucketFill(x, y - 1, visited); // top
+    if (x < columns - 1) bucketFill(x + 1, y, visited); // right
+    if (y < rows - 1) bucketFill(x, y + 1, visited); // bottom
+    if (x > 0) bucketFill(x - 1, y, visited); // left
   }
 
   return (
@@ -69,32 +63,36 @@ export function Grid(props: GridProps) {
         }}
       >
         <Index each={state.pixels}>
-          {(item, index) => {
-            return (
-              <div
-                onMouseEnter={(e) => handleDraw(e, index)}
-                onMouseDown={(e) => handleDraw(e, index)}
-                class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
-                style={{
-                  "background-color": item().painted
-                    ? state.colors[item().colorIndex]
-                    : item().colorIndex === state.currentColor
-                      ? "#404040"
-                      : undefined,
-                  outline: item().painted
-                    ? "none"
-                    : `1px solid ${outlineColor}`,
-                }}
-              >
-                {!item().painted && item().colorIndex}
-              </div>
-            );
-          }}
+          {(row, y) => (
+            <Index each={row()}>
+              {(item, x) => {
+                return (
+                  <div
+                    onMouseEnter={(e) => handleDraw(e, y, x)}
+                    onMouseDown={(e) => handleDraw(e, y, x)}
+                    class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
+                    style={{
+                      "background-color": item().painted
+                        ? state.colors[item().colorIndex]
+                        : item().colorIndex === state.currentColor
+                          ? "#404040"
+                          : undefined,
+                      outline: item().painted
+                        ? "none"
+                        : `1px solid ${outlineColor}`,
+                    }}
+                  >
+                    {!item().painted && item().colorIndex}
+                  </div>
+                );
+              }}
+            </Index>
+          )}
         </Index>
       </div>
       <div class="absolute bottom-0 left-0 m-8 flex gap-2 text-lg">
         <span>
-          {paintedPixelsCount()} / {state.pixels.length}
+          {paintedPixelsCount()} / {state.pixels.flatMap((x) => x).length}
         </span>
       </div>
     </>

@@ -7,7 +7,7 @@ interface GenerateRandomArtParams {
 }
 
 interface AddBigSplatterParams {
-  pixels: Pixel[];
+  pixels: Pixel[][];
   colorIndex: number;
   width: number;
   height: number;
@@ -20,10 +20,12 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
     randomBrightHexColorString(),
   );
 
-  let pixels = Array.from({ length: width * height }).map(() => ({
-    colorIndex: Math.floor(Math.random() * colorAmount),
-    painted: false,
-  }));
+  let pixels = Array.from({ length: height }).map((row) =>
+    Array.from({ length: width }).map(() => ({
+      colorIndex: Math.floor(Math.random() * colorAmount),
+      painted: false,
+    })),
+  );
 
   const splatterParams = { pixels, width, height };
   const splatterIndexes = [0, 0, 1, 2, 5, 6, 7];
@@ -35,25 +37,21 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
   return { colors, pixels };
 }
 
-function addBigSplatter(params: AddBigSplatterParams): Pixel[] {
+function addBigSplatter(params: AddBigSplatterParams): Pixel[][] {
   const { pixels, colorIndex, width, height } = params;
 
   const splatSize = Math.min(width, height) / 3;
 
-  // Generate a random splat position within the grid
   const splatX = Math.floor(Math.random() * width);
   const splatY = Math.floor(Math.random() * height);
 
-  // Generate a random splatter pattern
   const splatter = generateSplatterPattern(splatSize);
 
-  // Add the splatter to the pixels array
   for (let x = splatX; x < splatX + splatSize; x++) {
     for (let y = splatY; y < splatY + splatSize; y++) {
       if (x < width && y < height) {
-        const index = x + y * width;
         if (splatter[x - splatX][y - splatY]) {
-          pixels[index] = { colorIndex, painted: false };
+          pixels[y][x] = { colorIndex, painted: false };
         }
       }
     }

@@ -13,7 +13,7 @@ function App() {
     <div class="relative flex h-full select-none justify-center gap-8 p-8">
       <AppProvider state={{ ...state, currentColor: 0, paintTool: "pencil" }}>
         <SideBar />
-        <Grid rows={height} columns={width} />
+        <Grid />
         <Palette />
       </AppProvider>
     </div>
