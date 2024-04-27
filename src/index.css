@@ -8,5 +8,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #151515;
+  color: white;
   font-family: "Lucida Console", "Courier New", monospace;
 }

@@ -1,7 +1,6 @@
 import type { Pixel } from "./src/types";
 
 export function getPaintedRatio(pixels: Pixel[][], index: number) {
-  console.time("getPaintedRatio #2");
   let currentPixels = 0;
   let paintedPixels = 0;
 
@@ -15,8 +14,6 @@ export function getPaintedRatio(pixels: Pixel[][], index: number) {
       }
     }
   }
-
-  console.timeEnd("getPaintedRatio #2");
 
   return { currentPixels, paintedPixels };
 }

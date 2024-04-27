@@ -1,6 +1,6 @@
 import { AppProvider } from "../provider";
 import { generateRandomArt } from "../../utils";
-import { Grid, Palette, SideBar } from "../components";
+import { Grid, BottomMenu, SideBar } from "../components";
 
 const width = 16 * 2;
 const height = 9 * 2;
@@ -13,7 +13,7 @@ export function PixelArt() {
     <AppProvider state={{ ...state, currentColor: 0, paintTool: "pencil" }}>
       <SideBar />
       <Grid />
-      <Palette />
+      <BottomMenu />
     </AppProvider>
   );
 }

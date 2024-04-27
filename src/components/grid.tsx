@@ -18,7 +18,6 @@ function countPaintedPixels(pixels: Pixel[][]) {
 
 export function Grid() {
   const { state, setState } = useAppProvider();
-  const paintedPixelsCount = createMemo(() => countPaintedPixels(state.pixels));
   const columns = state.pixels[0].length;
   const rows = state.pixels.length;
 
@@ -54,47 +53,40 @@ export function Grid() {
   }
 
   return (
-    <>
-      <div
-        class="grid h-5/6 cursor-crosshair"
-        style={{
-          "grid-template-rows": `repeat(${rows}, 1fr)`,
-          "grid-template-columns": `repeat(${columns}, 1fr)`,
-        }}
-      >
-        <Index each={state.pixels}>
-          {(row, y) => (
-            <Index each={row()}>
-              {(item, x) => {
-                return (
-                  <div
-                    onMouseEnter={(e) => handleDraw(e, y, x)}
-                    onMouseDown={(e) => handleDraw(e, y, x)}
-                    class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
-                    style={{
-                      "background-color": item().painted
-                        ? state.colors[item().colorIndex]
-                        : item().colorIndex === state.currentColor
-                          ? "#404040"
-                          : undefined,
-                      outline: item().painted
-                        ? "none"
-                        : `1px solid ${outlineColor}`,
-                    }}
-                  >
-                    {!item().painted && item().colorIndex}
-                  </div>
-                );
-              }}
-            </Index>
-          )}
-        </Index>
-      </div>
-      <div class="absolute bottom-0 left-0 m-8 flex gap-2 text-lg">
-        <span>
-          {paintedPixelsCount()} / {state.pixels.flatMap((x) => x).length}
-        </span>
-      </div>
-    </>
+    <div
+      class="grid h-5/6 cursor-crosshair"
+      style={{
+        "grid-template-rows": `repeat(${rows}, 1fr)`,
+        "grid-template-columns": `repeat(${columns}, 1fr)`,
+      }}
+    >
+      <Index each={state.pixels}>
+        {(row, y) => (
+          <Index each={row()}>
+            {(item, x) => {
+              return (
+                <div
+                  onMouseEnter={(e) => handleDraw(e, y, x)}
+                  onMouseDown={(e) => handleDraw(e, y, x)}
+                  class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
+                  style={{
+                    "background-color": item().painted
+                      ? state.colors[item().colorIndex]
+                      : item().colorIndex === state.currentColor
+                        ? "#404040"
+                        : undefined,
+                    outline: item().painted
+                      ? "none"
+                      : `1px solid ${outlineColor}`,
+                  }}
+                >
+                  {!item().painted && item().colorIndex}
+                </div>
+              );
+            }}
+          </Index>
+        )}
+      </Index>
+    </div>
   );
 }

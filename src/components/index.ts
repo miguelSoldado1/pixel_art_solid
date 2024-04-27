@@ -1,3 +1,3 @@
 export * from "./grid";
-export * from "./palette";
+export * from "./bottomMenu";
 export * from "./sideBar";
