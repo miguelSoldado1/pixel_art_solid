@@ -4,7 +4,7 @@ import { ColorButton } from "./colorButton";
 import { getPaintedRatio } from "../../helpers";
 import type { Pixel } from "../types";
 
-function getPaintedRatioStr(pixels: Pixel[], currentIdx: number) {
+function getPaintedRatioStr(pixels: Pixel[][], currentIdx: number) {
   const { currentPixels, paintedPixels } = getPaintedRatio(pixels, currentIdx);
 
   return `${paintedPixels} | ${currentPixels}`;
