@@ -1,28 +1,18 @@
-import CheckMark from "../assets/check.svg";
-import { State, useAppProvider } from "../provider";
-import { getPaintedRatio } from "../../helpers";
+import { JSX, splitProps } from "solid-js";
 
-interface ColorButtonProps {
-  color: string;
-  index: number;
-}
-
-function isColorFinished(state: State, index: number) {
-  const { currentPixels, paintedPixels } = getPaintedRatio(state.pixels, index);
-
-  return paintedPixels === currentPixels;
+interface ColorButtonProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
+  selected: boolean;
 }
 
 export function ColorButton(props: ColorButtonProps) {
-  const { state, setState } = useAppProvider();
+  const [local, others] = splitProps(props, ["selected"]);
 
   return (
     <button
-      class={`text-outline-color flex aspect-square w-12 cursor-pointer items-center justify-center border ${state.currentColor === props.index ? "border-white" : "border-black"}`}
-      style={{ background: props.color }}
-      onClick={() => setState("currentColor", props.index)}
+      {...others}
+      class={`text-outline-color flex aspect-square w-12 cursor-pointer items-center justify-center border ${local.selected ? "border-white" : "border-black"}`}
     >
-      {isColorFinished(state, props.index) ? <CheckMark /> : props.index}
+      {props.children}
     </button>
   );
 }
