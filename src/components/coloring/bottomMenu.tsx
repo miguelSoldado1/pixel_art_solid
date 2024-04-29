@@ -1,9 +1,9 @@
 import { Index, createMemo } from "solid-js";
-import CheckMark from "../assets/check.svg";
-import { useAppProvider } from "../provider";
-import { ColorButton } from "./colorButton";
-import { getPaintedRatio } from "../../helpers";
-import type { Pixel } from "../types";
+import CheckMark from "../../assets/check.svg";
+import { useAppProvider } from "../../provider";
+import { ColorButton } from "../colorButton";
+import { getPaintedRatio } from "../../../helpers";
+import type { Pixel } from "../../types";
 
 function getPaintedRatioStr(pixels: Pixel[][], currentIdx: number) {
   const { currentPixels, paintedPixels } = getPaintedRatio(pixels, currentIdx);

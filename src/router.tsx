@@ -1,5 +1,5 @@
 import { Route, RouteSectionProps, Router } from "@solidjs/router";
-import { PixelArt } from "./pages";
+import { Coloring } from "./pages";
 
 function Root(props: RouteSectionProps) {
   return (
@@ -12,7 +12,7 @@ function Root(props: RouteSectionProps) {
 export default function App() {
   return (
     <Router root={Root}>
-      <Route path="/" component={PixelArt} />
+      <Route path="/" component={Coloring} />
     </Router>
   );
 }

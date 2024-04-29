@@ -1,1 +1,1 @@
-export * from "./pixelArt";
+export * from "./coloring";

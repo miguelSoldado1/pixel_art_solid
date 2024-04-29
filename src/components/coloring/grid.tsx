@@ -1,6 +1,6 @@
 import { Index, createMemo } from "solid-js";
-import { useAppProvider } from "../provider";
-import type { Pixel } from "../types";
+import { useAppProvider } from "../../provider";
+import type { Pixel } from "../../types";
 
 const outlineColor = "#333333";
 
