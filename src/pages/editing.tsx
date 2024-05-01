@@ -2,8 +2,8 @@ import { AppProvider } from "../provider";
 import { BottomMenu, Grid, SideBar } from "../components/editing";
 import { generateEmptyGrid } from "../../utils";
 
-const width = 12;
-const height = 16;
+const width = 15;
+const height = 18;
 const colorAmount = 10;
 
 const { pixels } = generateEmptyGrid({ width, height, colorAmount });
