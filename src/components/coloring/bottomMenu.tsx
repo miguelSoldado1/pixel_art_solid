@@ -1,9 +1,8 @@
-import { Index } from "solid-js";
 import CheckMark from "../../assets/check.svg";
 import { useAppProvider } from "../../provider";
-import { ColorButton } from "../colorButton";
 import { getPaintedRatio } from "../../../helpers";
 import type { Pixel } from "../../types";
+import { ColorPalette } from "../colorPalette";
 
 function getPaintedRatioStr(pixels: Pixel[][], currentIdx: number) {
   const { currentPixels, paintedPixels } = getPaintedRatio(pixels, currentIdx);
@@ -28,7 +27,7 @@ function countPaintedPixels(pixels: Pixel[][]) {
 }
 
 export function BottomMenu() {
-  const { state, setState } = useAppProvider();
+  const { state } = useAppProvider();
 
   return (
     <div class="absolute bottom-0 right-0 flex w-full items-end justify-between p-4">
@@ -40,20 +39,11 @@ export function BottomMenu() {
         <span class="mx-4 border-b-2 border-white p-1 text-center text-lg">
           {getPaintedRatioStr(state.pixels, state.currentColor)}
         </span>
-        <div class="grid grid-cols-10">
-          <Index each={state.colors}>
-            {(color, index) => (
-              <ColorButton
-                color={color()}
-                selected={state.currentColor === index}
-                style={{ background: color() }}
-                onClick={() => setState("currentColor", index)}
-              >
-                {isColorFinished(state.pixels, index) ? <CheckMark /> : index}
-              </ColorButton>
-            )}
-          </Index>
-        </div>
+        <ColorPalette
+          label={(index: number) =>
+            isColorFinished(state.pixels, index) ? <CheckMark /> : index
+          }
+        />
       </div>
     </div>
   );

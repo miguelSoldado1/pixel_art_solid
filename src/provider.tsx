@@ -6,7 +6,7 @@ export interface State {
   pixels: Pixel[][];
   colors: string[];
   currentColor: number;
-  paintTool: "paintBucket" | "pencil";
+  paintTool: "paintBucket" | "pencil" | "eraser";
 }
 
 interface ContextProps {

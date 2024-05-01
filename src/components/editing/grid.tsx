@@ -12,12 +12,36 @@ export function Grid() {
     if (e.buttons === 1 || e.button === 1) {
       switch (state.paintTool) {
         case "pencil":
-          setState("pixels", y, x, {
+          return setState("pixels", y, x, {
             colorIndex: state.currentColor,
             painted: true,
           });
+        case "eraser":
+          return setState("pixels", y, x, {
+            colorIndex: -1,
+            painted: false,
+          });
+        case "paintBucket":
+          return bucketFill(x, y);
       }
     }
+  }
+
+  function bucketFill(x: number, y: number, visited = new Set<number>()) {
+    const { currentColor, pixels } = state;
+    const currentIndex = y * columns + x;
+
+    if (visited.has(currentIndex) || pixels[y][x].painted) {
+      return;
+    }
+
+    visited.add(currentIndex);
+    setState("pixels", y, x, { colorIndex: currentColor, painted: true });
+
+    if (y > 0) bucketFill(x, y - 1, visited); // top
+    if (x < columns - 1) bucketFill(x + 1, y, visited); // right
+    if (y < rows - 1) bucketFill(x, y + 1, visited); // bottom
+    if (x > 0) bucketFill(x - 1, y, visited); // left
   }
 
   return (

@@ -1,6 +1,5 @@
-import { Index } from "solid-js";
 import { useAppProvider } from "../../provider";
-import { ColorButton } from "../colorButton";
+import { ColorPalette } from "../colorPalette";
 import type { Pixel } from "../../types";
 
 function countPaintedPixels(pixels: Pixel[][]) {
@@ -16,7 +15,7 @@ function countPaintedPixels(pixels: Pixel[][]) {
 }
 
 export function BottomMenu() {
-  const { state, setState } = useAppProvider();
+  const { state } = useAppProvider();
 
   return (
     <div class="absolute bottom-0 right-0 flex w-full items-end justify-between p-4">
@@ -24,20 +23,8 @@ export function BottomMenu() {
         {countPaintedPixels(state.pixels)} /{" "}
         {state.pixels.length * state.pixels[0].length}
       </span>
-      <div class="grid grid-cols-10">
-        <Index each={state.colors}>
-          {(color, index) => (
-            <ColorButton
-              color={color()}
-              selected={state.currentColor === index}
-              style={{ background: color() }}
-              onClick={() => setState("currentColor", index)}
-            >
-              {index}
-            </ColorButton>
-          )}
-        </Index>
-      </div>
+      <div class="m-4 text-center text-xl">Export</div>
+      <ColorPalette label={(index: number) => index} />
     </div>
   );
 }
