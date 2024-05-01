@@ -1,6 +1,7 @@
 import { AppProvider } from "../provider";
 import { generateRandomArt } from "../../utils";
-import { Grid, BottomMenu, SideBar } from "../components/coloring";
+import { Grid, BottomMenu } from "../components/coloring";
+import { SideBar } from "../components";
 
 const width = 16 * 2;
 const height = 9 * 2;

@@ -1,20 +1,7 @@
-import { Index, createMemo } from "solid-js";
+import { Index } from "solid-js";
 import { useAppProvider } from "../../provider";
-import type { Pixel } from "../../types";
 
 const outlineColor = "#333333";
-
-function countPaintedPixels(pixels: Pixel[][]) {
-  let count = 0;
-  for (const row of pixels) {
-    for (const column of row) {
-      if (column.painted) {
-        count++;
-      }
-    }
-  }
-  return count;
-}
 
 export function Grid() {
   const { state, setState } = useAppProvider();
@@ -63,27 +50,25 @@ export function Grid() {
       <Index each={state.pixels}>
         {(row, y) => (
           <Index each={row()}>
-            {(item, x) => {
-              return (
-                <div
-                  onMouseEnter={(e) => handleDraw(e, y, x)}
-                  onMouseDown={(e) => handleDraw(e, y, x)}
-                  class={`flex aspect-square items-center justify-center text-xs ${item().colorIndex === state.currentColor ? "bg-accent-color" : ""}`}
-                  style={{
-                    "background-color": item().painted
-                      ? state.colors[item().colorIndex]
-                      : item().colorIndex === state.currentColor
-                        ? "#404040"
-                        : undefined,
-                    outline: item().painted
-                      ? "none"
-                      : `1px solid ${outlineColor}`,
-                  }}
-                >
-                  {!item().painted && item().colorIndex}
-                </div>
-              );
-            }}
+            {(item, x) => (
+              <div
+                onMouseEnter={(e) => handleDraw(e, y, x)}
+                onMouseDown={(e) => handleDraw(e, y, x)}
+                class="flex aspect-square items-center justify-center text-xs"
+                style={{
+                  "background-color": item().painted
+                    ? state.colors[item().colorIndex]
+                    : item().colorIndex === state.currentColor
+                      ? "#404040"
+                      : undefined,
+                  outline: item().painted
+                    ? "none"
+                    : `1px solid ${outlineColor}`,
+                }}
+              >
+                {!item().painted && item().colorIndex}
+              </div>
+            )}
           </Index>
         )}
       </Index>

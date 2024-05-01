@@ -1,6 +1,6 @@
 import type { Pixel } from "./src/types";
 
-interface GenerateRandomArtParams {
+interface GeneratorParams {
   width: number;
   height: number;
   colorAmount: number;
@@ -13,14 +13,14 @@ interface AddBigSplatterParams {
   height: number;
 }
 
-export function generateRandomArt(params: GenerateRandomArtParams) {
+export function generateRandomArt(params: GeneratorParams) {
   const { width, height, colorAmount } = params;
 
   const colors = Array.from({ length: colorAmount }).map(() =>
     randomBrightHexColorString(),
   );
 
-  let pixels = Array.from({ length: height }).map((row) =>
+  let pixels = Array.from({ length: height }).map(() =>
     Array.from({ length: width }).map(() => ({
       colorIndex: Math.floor(Math.random() * colorAmount),
       painted: false,
@@ -33,6 +33,23 @@ export function generateRandomArt(params: GenerateRandomArtParams) {
   for (const index of splatterIndexes) {
     pixels = addBigSplatter({ ...splatterParams, colorIndex: index });
   }
+
+  return { colors, pixels };
+}
+
+export function generateEmptyGrid(params: GeneratorParams) {
+  const { width, height, colorAmount } = params;
+
+  const colors = Array.from({ length: colorAmount }).map(() =>
+    randomBrightHexColorString(),
+  );
+
+  const pixels = Array.from({ length: height }).map(() =>
+    Array.from({ length: width }).map(() => ({
+      colorIndex: -1,
+      painted: false,
+    })),
+  );
 
   return { colors, pixels };
 }

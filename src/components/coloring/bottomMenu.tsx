@@ -1,4 +1,4 @@
-import { Index, createMemo } from "solid-js";
+import { Index } from "solid-js";
 import CheckMark from "../../assets/check.svg";
 import { useAppProvider } from "../../provider";
 import { ColorButton } from "../colorButton";
@@ -29,12 +29,12 @@ function countPaintedPixels(pixels: Pixel[][]) {
 
 export function BottomMenu() {
   const { state, setState } = useAppProvider();
-  const paintedPixelsCount = createMemo(() => countPaintedPixels(state.pixels));
 
   return (
     <div class="absolute bottom-0 right-0 flex w-full items-end justify-between p-4">
       <span class="m-4 text-lg">
-        {paintedPixelsCount()} / {state.pixels.length * state.pixels[0].length}
+        {countPaintedPixels(state.pixels)} /{" "}
+        {state.pixels.length * state.pixels[0].length}
       </span>
       <div class="flex flex-col gap-2">
         <span class="mx-4 border-b-2 border-white p-1 text-center text-lg">
