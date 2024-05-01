@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router root={Root}>
       <Route path="/" component={Coloring} />
-      {!import.meta.env.PROD && <Route path="/editing" component={Editing} />}
+      <Route path="/editing" component={Editing} />
     </Router>
   );
 }
