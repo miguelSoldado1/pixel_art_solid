@@ -13,7 +13,7 @@ export function Grid() {
 
     if (current && (e.buttons === 1 || e.button === 1)) {
       if (state.paintTool === "paintBucket") {
-        return bucketFill(x, y);
+        return bucketFill(y, x);
       }
 
       if (state.paintTool === "pencil") {
@@ -22,7 +22,7 @@ export function Grid() {
     }
   }
 
-  function bucketFill(x: number, y: number, visited = new Set<number>()) {
+  function bucketFill(y: number, x: number, visited = new Set<number>()) {
     const { currentColor, pixels } = state;
     const currentIndex = y * columns + x;
 
@@ -33,10 +33,10 @@ export function Grid() {
     setState("pixels", y, x, (prev) => ({ ...prev, painted: true }));
     visited.add(currentIndex);
 
-    if (y > 0) bucketFill(x, y - 1, visited); // top
-    if (x < columns - 1) bucketFill(x + 1, y, visited); // right
-    if (y < rows - 1) bucketFill(x, y + 1, visited); // bottom
-    if (x > 0) bucketFill(x - 1, y, visited); // left
+    if (y > 0) bucketFill(y - 1, x, visited); // top
+    if (x < columns - 1) bucketFill(y, x + 1, visited); // right
+    if (y < rows - 1) bucketFill(y + 1, x, visited); // bottom
+    if (x > 0) bucketFill(y, x - 1, visited); // left
   }
 
   return (
