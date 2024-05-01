@@ -22,12 +22,12 @@ export function Grid() {
             painted: false,
           });
         case "paintBucket":
-          return bucketFill(x, y);
+          return bucketFill(y, x);
       }
     }
   }
 
-  function bucketFill(x: number, y: number, visited = new Set<number>()) {
+  function bucketFill(y: number, x: number, visited = new Set<number>()) {
     const { currentColor, pixels } = state;
     const currentIndex = y * columns + x;
 
@@ -38,10 +38,10 @@ export function Grid() {
     visited.add(currentIndex);
     setState("pixels", y, x, { colorIndex: currentColor, painted: true });
 
-    if (y > 0) bucketFill(x, y - 1, visited); // top
-    if (x < columns - 1) bucketFill(x + 1, y, visited); // right
-    if (y < rows - 1) bucketFill(x, y + 1, visited); // bottom
-    if (x > 0) bucketFill(x - 1, y, visited); // left
+    if (y > 0) bucketFill(y - 1, x, visited); // top
+    if (x < columns - 1) bucketFill(y, x + 1, visited); // right
+    if (y < rows - 1) bucketFill(y + 1, x, visited); // bottom
+    if (x > 0) bucketFill(y, x - 1, visited); // left
   }
 
   return (
