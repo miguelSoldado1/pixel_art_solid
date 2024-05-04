@@ -1,0 +1,4182 @@
+{
+  "colors": [
+    "#336600",
+    "#CCFF99",
+    "#99CC33",
+    "#669933",
+    "#000000",
+    "#663300",
+    "#440000",
+    "#BBBBBB",
+    "#EEEEEE",
+    "#CC9999",
+    "#996666",
+    "#663333",
+    "#996600",
+    "#663300",
+    "#34393D",
+    "#220000"
+  ],
+  "pixels": [
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 8,
+        "painted": false
+      },
+      {
+        "colorIndex": 7,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 10,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 8,
+        "painted": false
+      },
+      {
+        "colorIndex": 7,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 8,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 14,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 10,
+        "painted": false
+      },
+      {
+        "colorIndex": 9,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 11,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 8,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 14,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 8,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 11,
+        "painted": false
+      },
+      {
+        "colorIndex": 9,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 10,
+        "painted": false
+      },
+      {
+        "colorIndex": 10,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 5,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 11,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 10,
+        "painted": false
+      },
+      {
+        "colorIndex": 9,
+        "painted": false
+      },
+      {
+        "colorIndex": 11,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 4,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 9,
+        "painted": false
+      },
+      {
+        "colorIndex": 9,
+        "painted": false
+      },
+      {
+        "colorIndex": 11,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 1,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 9,
+        "painted": false
+      },
+      {
+        "colorIndex": 10,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      }
+    ],
+    [
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 15,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 13,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 12,
+        "painted": false
+      },
+      {
+        "colorIndex": 6,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      },
+      {
+        "colorIndex": 0,
+        "painted": false
+      },
+      {
+        "colorIndex": 2,
+        "painted": false
+      },
+      {
+        "colorIndex": 3,
+        "painted": false
+      }
+    ]
+  ]
+}
