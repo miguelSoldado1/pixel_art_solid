@@ -29,7 +29,7 @@ export function BottomMenu() {
 
     console.log({
       colors: data.colors,
-      pixels: data.pixels.map((x) => x.map((y) => (y.painted = false))),
+      pixels: data.pixels.map((x) => x.map((y) => ({ ...y, painted: false }))),
     });
   }
 
