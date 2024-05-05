@@ -9,9 +9,12 @@ export function Grid() {
   const rows = state.pixels.length;
 
   function handleDraw(e: MouseEvent, y: number, x: number) {
-    const current = state.currentColor === state.pixels[y][x].colorIndex;
+    const currPixel = state.pixels[y][x];
+    if (currPixel.painted || state.currentColor !== currPixel.colorIndex) {
+      return false;
+    }
 
-    if (current && (e.buttons === 1 || e.button === 1)) {
+    if (e.buttons === 1 || e.button === 1) {
       if (state.paintTool === "paintBucket") {
         return bucketFill(y, x);
       }
