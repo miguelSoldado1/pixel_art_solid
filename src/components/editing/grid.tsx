@@ -52,37 +52,39 @@ export function Grid() {
   }
 
   return (
-    <div
-      class="grid h-5/6 cursor-crosshair"
-      style={{
-        "grid-template-rows": `repeat(${rows}, 1fr)`,
-        "grid-template-columns": `repeat(${columns}, 1fr)`,
-      }}
-    >
-      <Index each={state.pixels}>
-        {(row, y) => (
-          <Index each={row()}>
-            {(item, x) => (
-              <div
-                onMouseEnter={(e) => handleDraw(e, y, x)}
-                onMouseDown={(e) => handleDraw(e, y, x)}
-                class="flex aspect-square items-center justify-center text-xs"
-                style={
-                  item().painted
-                    ? {
-                        "background-color": state.colors[item().colorIndex],
-                        outline: "none",
-                      }
-                    : {
-                        "background-color": "inherit",
-                        outline: `1px solid ${outlineColor}`,
-                      }
-                }
-              />
-            )}
-          </Index>
-        )}
-      </Index>
+    <div class="flex h-5/6 w-full justify-center">
+      <div
+        class="grid cursor-crosshair"
+        style={{
+          "grid-template-rows": `repeat(${rows}, 1fr)`,
+          "grid-template-columns": `repeat(${columns}, 1fr)`,
+        }}
+      >
+        <Index each={state.pixels}>
+          {(row, y) => (
+            <Index each={row()}>
+              {(item, x) => (
+                <div
+                  onMouseEnter={(e) => handleDraw(e, y, x)}
+                  onMouseDown={(e) => handleDraw(e, y, x)}
+                  class="flex aspect-square items-center justify-center text-xs"
+                  style={
+                    item().painted
+                      ? {
+                          "background-color": state.colors[item().colorIndex],
+                          outline: "none",
+                        }
+                      : {
+                          "background-color": "inherit",
+                          outline: `1px solid ${outlineColor}`,
+                        }
+                  }
+                />
+              )}
+            </Index>
+          )}
+        </Index>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import CheckMark from "../../assets/check.svg";
 import { useAppProvider } from "../../provider";
 import { getPaintedRatio } from "../../../helpers";
-import type { Pixel } from "../../types";
 import { ColorPalette } from "../colorPalette";
+import type { Pixel } from "../../types";
 
 function getPaintedRatioStr(pixels: Pixel[][], currentIdx: number) {
   const { currentPixels, paintedPixels } = getPaintedRatio(pixels, currentIdx);
@@ -14,7 +14,7 @@ function isColorFinished(pixels: Pixel[][], index: number) {
   return paintedPixels === currentPixels;
 }
 
-function countPaintedPixels(pixels: Pixel[][]) {
+function countPaintedPixelsStr(pixels: Pixel[][]) {
   let count = 0;
   for (const row of pixels) {
     for (const column of row) {
@@ -23,20 +23,18 @@ function countPaintedPixels(pixels: Pixel[][]) {
       }
     }
   }
-  return count;
+
+  return `${count} / ${pixels.length * pixels[0].length}`;
 }
 
 export function BottomMenu() {
   const { state } = useAppProvider();
 
   return (
-    <div class="absolute bottom-0 right-0 flex w-full items-end justify-between p-4">
-      <span class="m-4 text-lg">
-        {countPaintedPixels(state.pixels)} /{" "}
-        {state.pixels.length * state.pixels[0].length}
-      </span>
+    <div class="flex h-1/6 items-center justify-between">
+      <span class="m-4 text-lg">{countPaintedPixelsStr(state.pixels)}</span>
       <div class="flex flex-col gap-2">
-        <span class="mx-4 border-b-2 border-white p-1 text-center text-lg">
+        <span class="p- mx-4 border-b-2 border-white text-center text-lg">
           {getPaintedRatioStr(state.pixels, state.currentColor)}
         </span>
         <ColorPalette

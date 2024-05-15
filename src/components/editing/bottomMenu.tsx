@@ -34,7 +34,7 @@ export function BottomMenu() {
   }
 
   return (
-    <div class="absolute bottom-0 right-0 flex w-full items-end justify-between p-4">
+    <div class="flex h-1/6 items-center justify-between">
       <span class="m-4 text-lg">
         {paintedPixelsCount()} / {state.pixels.length * state.pixels[0].length}
       </span>

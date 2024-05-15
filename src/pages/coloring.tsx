@@ -11,10 +11,12 @@ import yoda from "../yoda.json";
 
 export function Coloring() {
   return (
-    <AppProvider state={{ ...yoda, currentColor: 0, paintTool: "pencil" }}>
-      <SideBar />
-      <Grid />
-      <BottomMenu />
-    </AppProvider>
+    <div class="m-2 w-full">
+      <AppProvider state={{ ...yoda, currentColor: 0, paintTool: "pencil" }}>
+        <SideBar />
+        <Grid />
+        <BottomMenu />
+      </AppProvider>
+    </div>
   );
 }

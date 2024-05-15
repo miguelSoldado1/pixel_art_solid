@@ -11,12 +11,14 @@ const colors = ["#fb0204", "#7e8002", "#fcaa04", "#333333"];
 
 export function Editing() {
   return (
-    <AppProvider
-      state={{ pixels, colors, currentColor: 0, paintTool: "pencil" }}
-    >
-      <SideBar />
-      <Grid />
-      <BottomMenu />
-    </AppProvider>
+    <div class="m-2 w-full">
+      <AppProvider
+        state={{ pixels, colors, currentColor: 0, paintTool: "pencil" }}
+      >
+        <SideBar />
+        <Grid />
+        <BottomMenu />
+      </AppProvider>
+    </div>
   );
 }

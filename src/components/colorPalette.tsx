@@ -20,7 +20,7 @@ export function ColorPalette(props: ColorPaletteProps) {
         {(color, index) => (
           <button
             color={color()}
-            class={`text-outline-color flex aspect-square w-12 cursor-pointer items-center justify-center border ${state.currentColor === index ? "border-white" : "border-black"}`}
+            class={`text-outline-color flex aspect-square h-11 cursor-pointer items-center justify-center border ${state.currentColor === index ? "border-white" : "border-black"}`}
             style={{ background: color() }}
             onClick={() => setState("currentColor", index)}
           >
