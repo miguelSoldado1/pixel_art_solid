@@ -1,4 +1,4 @@
-import type { Pixel } from "./src/types";
+import type { Pixel } from "./types";
 
 export function getPaintedRatio(pixels: Pixel[][], index: number) {
   let currentPixels = 0;

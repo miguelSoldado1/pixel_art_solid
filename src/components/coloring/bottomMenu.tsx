@@ -1,8 +1,8 @@
-import CheckMark from "../../assets/check.svg";
-import { useAppProvider } from "../../provider";
-import { getPaintedRatio } from "../../../helpers";
+import CheckMark from "@/assets/check.svg";
+import { useAppProvider } from "@/provider";
+import { getPaintedRatio } from "@/helpers";
 import { ColorPalette } from "../colorPalette";
-import type { Pixel } from "../../types";
+import type { Pixel } from "@/types";
 
 function getPaintedRatioStr(pixels: Pixel[][], currentIdx: number) {
   const { currentPixels, paintedPixels } = getPaintedRatio(pixels, currentIdx);

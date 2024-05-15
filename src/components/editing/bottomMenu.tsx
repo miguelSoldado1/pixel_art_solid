@@ -1,8 +1,8 @@
-import { useAppProvider } from "../../provider";
+import { useAppProvider } from "@/provider";
 import { ColorPalette } from "../colorPalette";
-import type { Pixel } from "../../types";
 import { createMemo } from "solid-js";
 import { unwrap } from "solid-js/store";
+import type { Pixel } from "@/types";
 
 function countPaintedPixels(pixels: Pixel[][]) {
   let count = 0;

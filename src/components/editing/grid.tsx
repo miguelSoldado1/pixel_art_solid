@@ -1,5 +1,5 @@
 import { Index } from "solid-js";
-import { useAppProvider } from "../../provider";
+import { useAppProvider } from "@/provider";
 
 const outlineColor = "#333333";
 

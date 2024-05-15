@@ -1,5 +1,5 @@
-import { AppProvider } from "../provider";
-import { BottomMenu, Grid, SideBar } from "../components/editing";
+import { AppProvider } from "@/provider";
+import { BottomMenu, Grid, SideBar } from "@/components/editing";
 import { generateEmptyGrid } from "../../utils";
 
 const width = 15;

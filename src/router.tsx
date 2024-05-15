@@ -1,5 +1,5 @@
 import { Route, RouteSectionProps, Router } from "@solidjs/router";
-import { Coloring, Editing } from "./pages";
+import { Coloring, Editing } from "@/pages";
 
 function Root(props: RouteSectionProps) {
   return <div class=" flex h-full select-none">{props.children}</div>;

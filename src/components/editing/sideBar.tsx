@@ -1,8 +1,8 @@
-import { useAppProvider } from "../../provider";
-import PaintBucket from "../../assets/paintbucket.svg";
-import Pencil from "../../assets/pencil.svg";
-import Home from "../../assets/home.svg";
-import Eraser from "../../assets/eraser.svg";
+import { useAppProvider } from "@/provider";
+import PaintBucket from "@/assets/paintbucket.svg";
+import Pencil from "@/assets/pencil.svg";
+import Home from "@/assets/home.svg";
+import Eraser from "@/assets/eraser.svg";
 
 const buttonClass = "p-2 disabled:rounded disabled:bg-accent-color";
 

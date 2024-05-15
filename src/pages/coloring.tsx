@@ -1,6 +1,6 @@
-import { AppProvider } from "../provider";
+import { AppProvider } from "@/provider";
 // import { generateRandomArt } from "../../utils";
-import { Grid, BottomMenu, SideBar } from "../components/coloring";
+import { Grid, BottomMenu, SideBar } from "@/components/coloring";
 import yoda from "../yoda.json";
 
 // const width = 16 * 2;

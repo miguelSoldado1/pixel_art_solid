@@ -1,6 +1,5 @@
 import { Index, JSX } from "solid-js";
-import { useAppProvider } from "../provider";
-import { Pixel } from "../types";
+import { useAppProvider } from "@/provider";
 
 interface ColorPaletteProps {
   label: (index: number) => JSX.Element;
