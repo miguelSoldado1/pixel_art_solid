@@ -10,9 +10,9 @@ export function SideBar() {
 
   return (
     <div class="absolute left-0 top-0 flex h-full flex-col gap-4 p-4">
-      <button class={buttonClass}>
+      <a class={buttonClass} href="/">
         <Home />
-      </button>
+      </a>
       <button
         class={buttonClass}
         disabled={state.paintTool === "pencil"}
