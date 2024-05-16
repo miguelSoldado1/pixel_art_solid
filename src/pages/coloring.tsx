@@ -14,7 +14,7 @@ export function Coloring() {
 
   return (
     <div class="m-2 w-full">
-      <AppProvider state={{ ...item, currentColor: 0, paintTool: "pencil" }}>
+      <AppProvider state={{ ...item }}>
         <SideBar />
         <Grid />
         <BottomMenu />

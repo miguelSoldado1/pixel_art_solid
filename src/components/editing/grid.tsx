@@ -53,8 +53,12 @@ export function Grid() {
 
   return (
     <div class="flex h-5/6 w-full justify-center">
+      <img
+        class="absolute w-[674.667px]"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf1a2a60-2dec-4173-9c9d-d0adc4f0b0c8/debvevh-21530d40-6005-45f4-8e4e-c1d2a41d90ad.png/v1/fit/w_512,h_512,q_70,strp/mikasa_ackerman_pixel_art_32_bits_by_guiopixel_debvevh-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvYmYxYTJhNjAtMmRlYy00MTczLTljOWQtZDBhZGM0ZjBiMGM4XC9kZWJ2ZXZoLTIxNTMwZDQwLTYwMDUtNDVmNC04ZTRlLWMxZDJhNDFkOTBhZC5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0._PPy-1YP-HV9dB-92koEitsGTcl--LiLpUWdavy3etk"
+      />
       <div
-        class="grid cursor-crosshair"
+        class="z-10 grid cursor-crosshair"
         style={{
           "grid-template-rows": `repeat(${rows}, 1fr)`,
           "grid-template-columns": `repeat(${columns}, 1fr)`,

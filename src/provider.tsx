@@ -7,6 +7,7 @@ export interface State {
   colors: string[];
   currentColor: number;
   paintTool: "paintBucket" | "pencil" | "eraser";
+  toggleIndices: boolean;
 }
 
 interface ContextProps {
@@ -18,11 +19,19 @@ const PixelsContext = createContext<ContextProps>();
 
 interface AppProviderProps {
   children: JSX.Element;
-  state: State;
+  state: Partial<State>;
 }
 
+const defaultProps: State = {
+  pixels: [],
+  colors: [],
+  currentColor: 0,
+  paintTool: "pencil",
+  toggleIndices: false,
+};
+
 export function AppProvider(props: AppProviderProps) {
-  const [state, setState] = createStore(props.state);
+  const [state, setState] = createStore({ ...defaultProps, ...props.state });
 
   return (
     <PixelsContext.Provider value={{ state, setState }}>

@@ -73,7 +73,7 @@ export function Grid() {
                       : `1px solid ${outlineColor}`,
                   }}
                 >
-                  {!item().painted && item().colorIndex}
+                  {!state.toggleIndices && !item().painted && item().colorIndex}
                 </div>
               )}
             </Index>

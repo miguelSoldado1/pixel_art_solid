@@ -2,8 +2,9 @@ import { useAppProvider } from "@/provider";
 import PaintBucket from "@/assets/paintbucket.svg";
 import Pencil from "@/assets/pencil.svg";
 import Home from "@/assets/home.svg";
+import Square from "@/assets/square.svg";
 
-const buttonClass = "p-2 disabled:rounded disabled:bg-accent-color";
+const buttonClass = "p-2 rounded disabled:bg-accent-color";
 
 export function SideBar() {
   const { state, setState } = useAppProvider();
@@ -26,6 +27,12 @@ export function SideBar() {
         onClick={() => setState("paintTool", "paintBucket")}
       >
         <PaintBucket />
+      </button>
+      <button
+        class={`${buttonClass} ${state.toggleIndices ? "bg-accent-color" : ""}`}
+        onClick={() => setState("toggleIndices", (prev) => !prev)}
+      >
+        <Square />
       </button>
     </div>
   );
