@@ -42,7 +42,7 @@ export function Home() {
                     {columns} x {rows} | {art().colors.length} colors
                   </span>
                   <a
-                    class="w-1/2 cursor-pointer rounded border border-accent-color p-2 text-center"
+                    class="w-1/2 cursor-pointer rounded border border-accent-color p-2 text-center hover:bg-accent-color"
                     href={`/${art().path}`}
                   >
                     Color now
