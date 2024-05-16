@@ -9,19 +9,17 @@ export function Grid() {
   const rows = state.pixels.length;
 
   function handleDraw(e: MouseEvent, y: number, x: number) {
-    const currPixel = state.pixels[y][x];
-    if (currPixel.painted || state.currentColor !== currPixel.colorIndex) {
+    const { painted, colorIndex } = state.pixels[y][x];
+    if (painted || state.currentColor !== colorIndex || e.buttons !== 1) {
       return false;
     }
 
-    if (e.buttons === 1 || e.button === 1) {
-      if (state.paintTool === "paintBucket") {
-        return bucketFill(y, x);
-      }
+    if (state.paintTool === "paintBucket") {
+      return bucketFill(y, x);
+    }
 
-      if (state.paintTool === "pencil") {
-        return setState("pixels", y, x, (prev) => ({ ...prev, painted: true }));
-      }
+    if (state.paintTool === "pencil") {
+      return setState("pixels", y, x, (prev) => ({ ...prev, painted: true }));
     }
   }
 
@@ -57,7 +55,12 @@ export function Grid() {
               {(item, x) => (
                 <div
                   onMouseEnter={(e) => handleDraw(e, y, x)}
-                  onMouseDown={(e) => handleDraw(e, y, x)}
+                  onMouseDown={(e) => {
+                    handleDraw(e, y, x);
+                    if (e.buttons === 4) {
+                      setState("currentColor", item().colorIndex);
+                    }
+                  }}
                   class="flex aspect-square items-center justify-center text-xs"
                   style={{
                     "background-color": item().painted
