@@ -1,27 +1,18 @@
-import mario from "@/mario.json";
-import yoda from "@/yoda.json";
 import { Index } from "solid-js";
-
-const art = [
-  { ...mario, id: "mario" },
-  { ...yoda, id: "yoda" },
-];
+import content from "@/content";
 
 export function Home() {
   return (
     <div class="m-4 w-full">
       <h1 class="mb-4 text-center text-xl">Coloring Game</h1>
       <div class="grid h-full grid-cols-3 grid-rows-2 gap-6">
-        <Index each={art}>
+        <Index each={content}>
           {(art) => {
             const columns = art().pixels[0].length;
             const rows = art().pixels.length;
 
             return (
-              <a
-                class="flex flex-col gap-2 border border-accent-color p-2"
-                href={`/${art().id}`}
-              >
+              <div class="flex flex-col gap-2 border border-accent-color p-2">
                 <div class="flex h-5/6 justify-center">
                   <div
                     class="grid"
@@ -46,15 +37,18 @@ export function Home() {
                     </Index>
                   </div>
                 </div>
-                <div class=" flex flex-col items-center">
+                <div class="flex flex-col items-center">
                   <span>
                     {columns} x {rows} | {art().colors.length} colors
                   </span>
-                  <button class="w-1/2 rounded border border-accent-color p-2">
+                  <a
+                    class="w-1/2 cursor-pointer rounded border border-accent-color p-2 text-center"
+                    href={`/${art().path}`}
+                  >
                     Color now
-                  </button>
+                  </a>
                 </div>
-              </a>
+              </div>
             );
           }}
         </Index>

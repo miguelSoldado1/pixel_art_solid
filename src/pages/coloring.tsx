@@ -1,24 +1,17 @@
 import { AppProvider } from "@/provider";
-// import { generateRandomArt } from "../../utils";
+import { useNavigate, useParams } from "@solidjs/router";
+import content from "@/content";
 import { Grid, BottomMenu, SideBar } from "@/components/coloring";
-import mario from "../mario.json";
-import yoda from "../yoda.json";
-import { useParams } from "@solidjs/router";
-
-// const width = 16 * 2;
-// const height = 9 * 2;
-// const colorAmount = 10;
-
-// const state = generateRandomArt({ width, height, colorAmount });
-
-const art = [
-  { ...mario, id: "mario" },
-  { ...yoda, id: "yoda" },
-];
 
 export function Coloring() {
+  const navigate = useNavigate();
   const params = useParams();
-  const { id, ...item } = art.find((item) => item.id === params.path) ?? art[0];
+
+  const item = content.find((item) => item.path === params.path);
+
+  if (item === undefined) {
+    return navigate("/");
+  }
 
   return (
     <div class="m-2 w-full">
