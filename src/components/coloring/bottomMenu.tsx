@@ -15,7 +15,9 @@ function isColorFinished(pixels: Pixel[][], index: number) {
 }
 
 function countPaintedPixelsStr(pixels: Pixel[][]) {
+  const total = pixels.length * pixels[0].length;
   let count = 0;
+
   for (const row of pixels) {
     for (const column of row) {
       if (column.painted) {
@@ -24,7 +26,7 @@ function countPaintedPixelsStr(pixels: Pixel[][]) {
     }
   }
 
-  return `${count} / ${pixels.length * pixels[0].length}`;
+  return count === total ? "Finished!" : `${count} / ${total}`;
 }
 
 export function BottomMenu() {

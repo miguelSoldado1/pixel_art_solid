@@ -9,7 +9,7 @@ export function Grid() {
   const rows = state.pixels.length;
 
   function handleDraw(e: MouseEvent, y: number, x: number) {
-    if (e.buttons === 1 || e.button === 1) {
+    if (e.buttons === 1) {
       switch (state.paintTool) {
         case "pencil":
           return setState("pixels", y, x, {
